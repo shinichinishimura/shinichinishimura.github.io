@@ -24,7 +24,9 @@ Publications
 ------------
 `Google Scholar <https://scholar.google.com/citations?user=mKXfDMYAAAAJ&hl>`_
 
-Selected Publications:
+Software
+--------
+PyAbstantia
 
 Interests
 ---------
