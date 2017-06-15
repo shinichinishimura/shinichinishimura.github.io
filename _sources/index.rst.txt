@@ -1,0 +1,39 @@
+.. mypage documentation master file, created by
+   sphinx-quickstart on Thu Jun 15 12:49:41 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Shin-ichi NISHIMURA
+===================
+西村 真一
+
+Ph.D. (Tokyo Institute of Technology)
+
+Senior Researcher  
+
+`ORCID: 0000-0001-7464-8692 <https://orcid.org/0000-0001-7464-8692>`_
+
+Department of Chemical System Engineering,  
+Graduate School of Engineering,
+The University of Tokyo
+
+Elemental Strategy Initiative for Catalysts & Batteries,
+Kyoto University
+
+Publications
+------------
+`Google Scholar <https://scholar.google.com/citations?user=mKXfDMYAAAAJ&hl>`_
+
+Selected Publications:
+
+Interests
+---------
+* Crystal structure analysis
+* Solid state chemistry
+* Energy storage materials
+
+Other Links
+-----------
+* `Researchmap <http://researchmap.jp/s_nishimura>`_ 
+* `ResearcherID <http://www.researcherid.com/rid/B-2754-2011>`_
+
