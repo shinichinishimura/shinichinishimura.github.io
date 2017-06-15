@@ -7,9 +7,6 @@ Shin-ichi NISHIMURA
 ===================
 西村 真一
 
-.. raw:: html
-
-    <span id='badgeCont80375' style='width:26px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont80375&mashlet=badge&showTitle=false&className=a&rid=B-2754-2011&size=small'></script></span>
 
 Ph.D. (Tokyo Institute of Technology)
 
@@ -24,7 +21,7 @@ Kyoto University
 
 .. raw:: html
 
-    <p><a href="http://orcid.org"><img alt="ORCID logo" src="http://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" hspace="4" /></a> <a href="http://orcid.org/0000-0001-7464-8692">http://orcid.org/0000-0001-7464-8692</a></p>
+    <p><a href="http://orcid.org/0000-0001-7464-8692"><img alt="ORCID logo" src="http://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" hspace="4" /></a> <a href="http://orcid.org/0000-0001-7464-8692">http://orcid.org/0000-0001-7464-8692</a></p>
 
 
 Publications
@@ -43,9 +40,18 @@ Interests
 
 Other Links
 -----------
-* `Researchmap <http://researchmap.jp/s_nishimura>`_ 
+* `Atsuo YAMADA group <http://yamada-lab.t.u-tokyo.ac.jp/en>`_
 
+* researcherid
 
-* `ResearcherID <http://www.researcherid.com/rid/B-2754-2011>`_
+.. raw:: html
+
+    <span id='badgeCont307558' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont307558&mashlet=badge&showTitle=false&className=a&rid=B-2754-2011'></script></span>
+
+* `researchmap <http://researchmap.jp/s_nishimura/?lang=english>`_
+
+.. raw:: html
+
+    <a href='http://researchmap.jp/' target='_blank'><img title='researchmap' alt='rResearchmap' src='http://researchmap.jp/themes/images/researchmap220.gif' /></a>
 
 
