@@ -42,16 +42,8 @@ Other Links
 -----------
 * `Atsuo YAMADA group <http://yamada-lab.t.u-tokyo.ac.jp/en>`_
 
-* researcherid
-
-.. raw:: html
-
-    <span id='badgeCont307558' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont307558&mashlet=badge&showTitle=false&className=a&rid=B-2754-2011'></script></span>
+* `researcherid <http://www.researcherid.com/rid/B-2754-2011>`
 
 * `researchmap <http://researchmap.jp/s_nishimura/?lang=english>`_
-
-.. raw:: html
-
-    <a href='http://researchmap.jp/' target='_blank'><img title='researchmap' alt='rResearchmap' src='http://researchmap.jp/themes/images/researchmap220.gif' /></a>
 
 
