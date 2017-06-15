@@ -30,7 +30,7 @@ Publications
 
 Software
 --------
-PyAbstantia
+PyAbstantia: A Python script for BVS mapping
 
 Interests
 ---------
