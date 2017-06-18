@@ -5,8 +5,9 @@
 
 Shin-ichi NISHIMURA
 ===================
-西村 真一
 
+西村 真一
+---------
 
 Ph.D. (Tokyo Institute of Technology)
 
@@ -23,7 +24,6 @@ Kyoto University
 
     <p><a href="http://orcid.org/0000-0001-7464-8692"><img alt="ORCID logo" src="http://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" hspace="4" /></a> <a href="http://orcid.org/0000-0001-7464-8692">http://orcid.org/0000-0001-7464-8692</a></p>
 
-
 Publications
 ------------
 `Google Scholar <https://scholar.google.com/citations?user=mKXfDMYAAAAJ&hl>`_
@@ -38,6 +38,12 @@ Interests
 * Solid state chemistry
 * Energy storage materials
 
+.. image:: ./img/rot_octa_ao.png
+   :scale: 100%
+   :height: 160px
+   :width: 160px
+   :align: right
+
 Other Links
 -----------
 * `Atsuo YAMADA group <http://yamada-lab.t.u-tokyo.ac.jp/en>`_
@@ -46,4 +52,14 @@ Other Links
 
 * `researchmap <http://researchmap.jp/s_nishimura/?lang=english>`_
 
+.. raw:: html
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-101160225-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 
