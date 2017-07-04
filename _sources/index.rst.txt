@@ -31,7 +31,7 @@ Publications
 
 Software
 --------
-`PyAbstantia: A Python script for BVS mapping <https://shinichinishimura.github.io/pyabst/>`_
+`PyAbstantia: A Python-based program for BVS mapping <https://shinichinishimura.github.io/pyabst/>`_
 
 Interests
 ---------

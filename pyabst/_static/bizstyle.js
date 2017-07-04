@@ -36,6 +36,6 @@ $(window).resize(function(){
         $("li.nav-item-0 a").text("Top");
     }
     else {
-        $("li.nav-item-0 a").text("pyabst_doc 0.7 documentation");
+        $("li.nav-item-0 a").text("PyAbstantia 0.7 documentation");
     }
 });
