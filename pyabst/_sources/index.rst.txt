@@ -21,7 +21,7 @@ Similar softwares are already available:
 * Bond_Str_
 * `BVS MAPPING`_
 
-For details of BVEL, read `the critical review <http://doi.org/10.1002/pssa.201001116>`_ and papers by `Prof. Stefan Adams <http://www.dmse.nus.edu.sg/asn/index.html>`_.
+For details of BVEL, read `the critical review <http://doi.org/10.1002/pssa.201001116>`_ and papers by `Prof. Stefan Adams <http://www.dmse.nus.edu.sg/asn/mem_sa.html>`_.
 
 
 Installation
@@ -116,8 +116,8 @@ Arbitral numbers of blank lines are allowed.
 
   PyAbstantia does not use any symmetry operations.
   You have to supply all of the atomic coordinates in the unit cell.
-  Use or CIF mode for automatic generation of the input file.
-  RIETAN-FP_ and its assistant environent help to generate the input file.
+  Use CIF mode for automatic generation of the input file.
+  RIETAN-FP_ and its associated environent may help to generate the input file.
 
 Example: BVS mode
 ^^^^^^^^^^^^^^^^^
