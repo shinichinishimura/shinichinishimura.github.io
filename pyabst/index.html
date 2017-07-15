@@ -44,7 +44,10 @@
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">PyAbstantia</a><ul>
-<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#about">About</a><ul>
+<li><a class="reference internal" href="#changelog">Changelog</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#installation">Installation</a><ul>
 <li><a class="reference internal" href="#download">Download</a></li>
 <li><a class="reference internal" href="#install">Install</a></li>
@@ -101,18 +104,25 @@
 <ul class="simple">
 <li><a class="reference external" href="https://doi.org/10.1107/S0021889812032906">3DBVSMAPPER</a></li>
 <li><a class="reference external" href="https://www.ill.eu/sites/fullprof/php/programsdceb.html?pagina=Bond_Str">Bond_Str</a></li>
-<li><a class="reference external" href="http://pcwww.liv.ac.uk/~msd30/software/BVS_Mapping.html">BVS MAPPING</a></li>
+<li><a class="reference external" href="http://pcwww.liv.ac.uk/~msd30/software/BVS_Mapping.html">BVS Mapping</a></li>
 </ul>
 <p>For details of BVEL, read <a class="reference external" href="http://doi.org/10.1002/pssa.201001116">the review</a> and papers by <a class="reference external" href="http://www.dmse.nus.edu.sg/asn/mem_sa.html">Prof. Stefan Adams</a>.</p>
+<div class="section" id="changelog">
+<h3>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jun. xx, 2017: Version 0.7. This is the first public release of PyAbstantia.</li>
+</ul>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>PyAbstantia is mainly written in <a class="reference external" href="https://www.python.org">Python</a>.
 The latest version (0.7) have been tested on Python 3.6.x and Python 2.7.x.
-The <a class="reference external" href="http://www.numpy.org">Numpy</a> modules are required.</p>
+The <a class="reference external" href="http://www.numpy.org">NumPy</a> modules are required.</p>
 <p>Core part for the map calculation is written in Fortran.</p>
 <div class="section" id="download">
 <h3>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h3>
+<p>Download from <a class="reference external" href="https://shinichinishimura.github.io/PyAbstantia-0.7.tar.bz2">here</a>.</p>
 </div>
 <div class="section" id="install">
 <h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
@@ -138,7 +148,7 @@ $ cd PyAbstantia-0.7/
 </div>
 <div class="section" id="intel-compiler">
 <h3>Intel Compiler<a class="headerlink" href="#intel-compiler" title="Permalink to this headline">¶</a></h3>
-<p>If you need more speed, you can use Intel Fortran Compiler (ifort) for compiling the core modules written in Fortran.</p>
+<p>If you need more speed, you can use <a class="reference external" href="https://software.intel.com/en-us/fortran-compilers">Intel Fortran Compiler</a> (ifort) for compiling the core modules written in Fortran.</p>
 <p>To use the ifort, edit the following part of <code class="docutils literal"><span class="pre">build_lib.sh</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">FC</span><span class="o">=</span><span class="n">gfortran</span>
 </pre></div>
@@ -238,7 +248,7 @@ This keyword activates an internal flag for BVEL.</p>
 <span class="mf">1.0</span> <span class="mf">3.5</span> <span class="o">-</span><span class="mf">2.0</span>
 
 <span class="c1"># D_0</span>
-<span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">0.93316</span>
+<span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">0.98816</span>
 
 <span class="c1"># R_min</span>
 <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">1.94001</span>
