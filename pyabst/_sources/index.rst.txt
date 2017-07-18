@@ -13,7 +13,9 @@ PyAbstantia
 
 About
 =====
-PyAbstantia is a Python-based program for bond-valence sum (BVS) mapping and bond-valence energy landscape (BVEL).
+PyAbstantia is a Python-based program for bond-valence sum (BVS) mapping and bond-valence energy landscape (BVEL).  
+
+The author is `Shin-ichi NISHIMURA <diffraction.shin1@gmail.com>`_.
 
 Similar softwares are already available:
 
@@ -25,15 +27,15 @@ For details of BVEL, read `the review <http://doi.org/10.1002/pssa.201001116>`_ 
 
 Changelog
 ---------
-* Jun. xx, 2017: Version 0.7. This is the first public release of PyAbstantia.
+* Jun. 15, 2017: Version 0.7. This is the first public release of PyAbstantia.
 
 Installation
 ============
 PyAbstantia is mainly written in Python_.
-The latest version (0.7) have been tested on Python 3.6.x and Python 2.7.x.
+The latest version (0.7) has been tested on Python 3.6.x and Python 2.7.x.
 The NumPy_ modules are required. 
 
-Core part for the map calculation is written in Fortran.
+Core parts of the map calculation are written in Fortran.
 
 
 Download
@@ -100,8 +102,8 @@ This execution outputs a binary file ``sample.pgrid`` for visualizing with VESTA
 
 Options
 -------
-* ``-mp [NP]`` Multiprocessing. ``[NP]`` is number of processes.
-* ``-t`` Output the 3D-map data in ASCII format. (\*.grd format)
+* ``-mp [NP]`` Enable multiprocessing. ``[NP]`` is a number of processes.
+* ``-t`` Output the 3D-map data in the ASCII format. (\*.grd format)
 
 For example:
 
@@ -121,7 +123,7 @@ Arbitral numbers of blank lines are allowed.
   PyAbstantia does not use any symmetry operations.
   You have to supply all of the atomic coordinates in the unit cell.
   Use CIF mode for automatic generation of the input file.
-  RIETAN-FP_ and its associated environent may help to generate the input file.
+  RIETAN-FP_ and its associated environment may help to generate the input file and to run the map calculation.
 
 Example: BVS mode
 ^^^^^^^^^^^^^^^^^
@@ -236,12 +238,12 @@ Following options are available only in the CIF mode.
 
    Since the calculation conditions are case dependent, 
    fully automatic generation of the input file is not a realistic way. 
-   Some parameters can be set to unreasonable values. 
+   Some parameters can be set to unreasonable values in the automatic generations. 
    All the users have to check and edit the generated input files carefully before running the map calculation.
 
 .. warning::
 
-   PyAbstantia does not handle the formal charges in CIF.
+   PyAbstantia does not handle the formal charges in CIF. Users must specify the formal charges explicitly in the input file.
 
 
 .. _Python: https://www.python.org
