@@ -45,6 +45,8 @@
   <ul>
 <li><a class="reference internal" href="#">PyAbstantia</a><ul>
 <li><a class="reference internal" href="#about">About</a><ul>
+<li><a class="reference internal" href="#bvs-mode">BVS mode</a></li>
+<li><a class="reference internal" href="#bvel-mode">BVEL mode</a></li>
 <li><a class="reference internal" href="#changelog">Changelog</a></li>
 </ul>
 </li>
@@ -107,11 +109,27 @@
 <li><a class="reference external" href="https://www.ill.eu/sites/fullprof/php/programsdceb.html?pagina=Bond_Str">Bond_Str</a></li>
 <li><a class="reference external" href="http://pcwww.liv.ac.uk/~msd30/software/BVS_Mapping.html">BVS Mapping</a></li>
 </ul>
+<p>PyAbstantia is designed to visualize the ion diffusion pathways in two ways:</p>
+<ol class="arabic simple">
+<li>BVS (including softness-sensitive BVS)</li>
+<li>BVEL</li>
+</ol>
+<div class="section" id="bvs-mode">
+<h3>BVS mode<a class="headerlink" href="#bvs-mode" title="Permalink to this headline">¶</a></h3>
+<p>In this mode, PyAbstantia outputs a three-dimensional map of deviations from the ideal valence of the target ion:</p>
+<div class="math">
+<p><img src="_images/math/5e9715fc3f846605d00d2df108e2a7df0d5ff78b.png" alt="|\Delta V| = | V_{\rm target} - V_{\rm ideal} |"/></p>
+</div></div>
+<div class="section" id="bvel-mode">
+<h3>BVEL mode<a class="headerlink" href="#bvel-mode" title="Permalink to this headline">¶</a></h3>
 <p>For details of BVEL, read <a class="reference external" href="http://doi.org/10.1002/pssa.201001116">the review</a> and papers by <a class="reference external" href="http://www.dmse.nus.edu.sg/asn/mem_sa.html">Prof. Stefan Adams</a>.</p>
+</div>
 <div class="section" id="changelog">
 <h3>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Jun. 15, 2017: Version 0.7. This is the first public release of PyAbstantia.</li>
+<li>Jul. 21, 2017: Version 0.7b. <code class="docutils literal"><span class="pre">build_lib.sh</span></code> was modified for compiling with ifort on macOS.</li>
+<li>Jul. 21, 2017: Version 0.7a. The gfortran compiler options in <code class="docutils literal"><span class="pre">build_lib.sh</span></code> was fixed.</li>
+<li>Jul. 15, 2017: Version 0.7. This is the first public release of PyAbstantia.</li>
 </ul>
 </div>
 </div>
@@ -123,15 +141,15 @@ The <a class="reference external" href="http://www.numpy.org">NumPy</a> modules 
 <p>Core parts of the map calculation are written in Fortran.</p>
 <div class="section" id="download">
 <h3>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h3>
-<p>Download from <a class="reference external" href="https://shinichinishimura.github.io/PyAbstantia-0.7a.tar.bz2">here</a>.</p>
+<p>Download from <a class="reference external" href="https://shinichinishimura.github.io/PyAbstantia-0.7b.tar.bz2">here</a>.</p>
 </div>
 <div class="section" id="install">
 <h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Expand the archive</li>
 </ol>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ tar xvfj PyAbstantia-0.7.tar.bz2
-$ cd PyAbstantia-0.7/
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ tar xvfj PyAbstantia-0.7a.tar.bz2
+$ cd PyAbstantia-0.7a/
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -221,6 +239,15 @@ Use CIF mode for automatic generation of the input file.
 <span class="n">I</span>  <span class="mf">0.5</span> <span class="mf">0.5</span> <span class="mf">0.5</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
+<p>After running PyAbstantia, open the output file <code class="docutils literal"><span class="pre">alpha-AgI.pgrid</span></code> by <a class="reference external" href="http://jp-minerals.org/vesta/en/">VESTA</a>.</p>
+<p>Then:</p>
+<ul class="simple">
+<li>Set the isosurface level to 0.4.</li>
+<li>Deactivate the “Show Sections”.</li>
+</ul>
+<img alt="_images/alpha-AgI_BVS_VESTA01.jpg" src="_images/alpha-AgI_BVS_VESTA01.jpg" />
+<p>You can visualize the BVS isosurface with the crystal structure by importing the *.pgrid file to the crystal structural data.</p>
+<img alt="_images/alpha-AgI_BVS_VESTA02.jpg" src="_images/alpha-AgI_BVS_VESTA02.jpg" />
 </div>
 <div class="section" id="example-bvel-mode">
 <h4>Example: BVEL mode<a class="headerlink" href="#example-bvel-mode" title="Permalink to this headline">¶</a></h4>
