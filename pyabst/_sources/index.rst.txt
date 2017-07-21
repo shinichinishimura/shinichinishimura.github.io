@@ -23,11 +23,29 @@ Similar softwares are already available:
 * Bond_Str_
 * `BVS Mapping`_
 
+PyAbstantia is designed to visualize the ion diffusion pathways in two ways:
+
+1. BVS (including softness-sensitive BVS)
+2. BVEL
+
+BVS mode
+--------
+In this mode, PyAbstantia outputs a three-dimensional map of deviations from the ideal valence of the target ion:
+
+.. math::
+
+    |\Delta V| = | V_{\rm target} - V_{\rm ideal} |
+
+
+BVEL mode
+---------
 For details of BVEL, read `the review <http://doi.org/10.1002/pssa.201001116>`_ and papers by `Prof. Stefan Adams <http://www.dmse.nus.edu.sg/asn/mem_sa.html>`_.
 
 Changelog
 ---------
-* Jun. 15, 2017: Version 0.7. This is the first public release of PyAbstantia.
+* Jul. 21, 2017: Version 0.7b. ``build_lib.sh`` was modified for compiling with ifort on macOS.
+* Jul. 21, 2017: Version 0.7a. The gfortran compiler options in ``build_lib.sh`` was fixed.
+* Jul. 15, 2017: Version 0.7. This is the first public release of PyAbstantia.
 
 Installation
 ============
@@ -40,7 +58,7 @@ Core parts of the map calculation are written in Fortran.
 
 Download
 --------
-Download from `here <https://shinichinishimura.github.io/PyAbstantia-0.7.tar.bz2>`_.
+Download from `here <https://shinichinishimura.github.io/PyAbstantia-0.7b.tar.bz2>`_.
 
 Install
 -------
@@ -49,8 +67,8 @@ Install
 
 ::
 
-  $ tar xvfj PyAbstantia-0.7.tar.bz2
-  $ cd PyAbstantia-0.7/
+  $ tar xvfj PyAbstantia-0.7a.tar.bz2
+  $ cd PyAbstantia-0.7a/
 
 2. Compile Fortran modules
 
@@ -153,6 +171,19 @@ Example: BVS mode
   I  0.0 0.0 0.0 1.0
   I  0.5 0.5 0.5 1.0
 
+
+After running PyAbstantia, open the output file ``alpha-AgI.pgrid`` by VESTA_. 
+
+Then:
+
+* Set the isosurface level to 0.4.
+* Deactivate the "Show Sections".
+
+.. image:: ./images/alpha-AgI_BVS_VESTA01.jpg
+
+You can visualize the BVS isosurface with the crystal structure by importing the \*.pgrid file to the crystal structural data.
+
+.. image:: ./images/alpha-AgI_BVS_VESTA02.jpg
 
 Example: BVEL mode
 ^^^^^^^^^^^^^^^^^^^
