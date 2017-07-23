@@ -181,7 +181,7 @@ Then:
 
 .. image:: ./images/alpha-AgI_BVS_VESTA01.jpg
 
-You can visualize the BVS isosurface with the crystal structure by importing the \*.pgrid file to the crystal structural data.
+You can visualize the BVS isosurface with the crystal structure by importing the \*.pgrid file to the crystal structural data. The purple spheres are the iodide ions. The isosurface is drawn at a BVS mismatch level of 0.2 for the silver ion Ag\ :sup:`+`\ .
 
 .. image:: ./images/alpha-AgI_BVS_VESTA02.jpg
 
@@ -277,6 +277,116 @@ Following options are available only in the CIF mode.
    PyAbstantia does not handle the formal charges in CIF. Users must specify the formal charges explicitly in the input file.
 
 
+Tutorial
+========
+Na\ :sub:`3`\ V\ :sub:`2`\ (PO\ :sub:`4`\ )\ :sub:`2`\F\ :sub:`3`\
+------------------------------------------------------------------
+BVS
+^^^
+In this tutorial, we will use a CIF as an input. So you need to install pymatgen_ to use the CIF parser.
+
+Download a CIF file from `Crystallographic Open Database (COD) <http://www.crystallography.net/cod/>`_.
+
+::
+
+    $ curl -O http://www.crystallography.net/cod/1521543.cif
+
+or
+
+::
+
+    $ wget http://www.crystallography.net/cod/1521543.cif
+    
+The source of CIF is:
+
+Le Meins, J.M.; Crosnier-Lopez, M.P.; Hemon-Ribaud, A.; Courbion, G., 
+*Journal of Solid State Chemistry*, **148(2)**, 260--270 (1999) `DOI: 10.1006/jssc.1999.8447 <http://doi.org/10.1006/jssc.1999.8447>`_
+
+Just run PyAbstantia in the command line prompt:
+
+::
+
+    $ pyabst -mp 8 -a -r -e 1521543.cif
+
+Answer to several prompts:
+
+::
+
+    Input file: 1521543.cif
+    --- CIF mode ---
+    Input target ion
+    Na
+    Input a formal valence number of target ion.
+    1.0
+    Input a number of species for counter ion.
+    2
+    Input counter ion species 1 of 2
+    O
+    Input counter ion species 2 of 2
+    F
+    Resolution was set as 90 90 108
+    -----------------------------------------
+    1521543.inp is generated.
+    1521543_BVEL.inp is generated.
+    -----------------------------------------
+    Title: 1521543
+    Lattice Parameters:
+     a = 9.047 Å, b = 9.047 Å, c = 10.705 Å
+     alpha = 90.0°, beta = 90.0°, gamma = 90.0°
+     Data points along each axes: 90 90 108
+     Number of Processes: 8
+     Multiprocessing is not applicable.
+     No. of processes was reduced to 7.
+     Multiprocessing is not applicable.
+     No. of processes was reduced to 6.
+     Output file: 1521543.pgrid
+     ----------------------------------------
+     Calculation time for 3D-BVS:   7.18 sec
+     done
+
+Then you will get following three files.
+
+* ``1521543.inp``: input file for BVS
+* ``1521543.pgrid``: 3D map data of BVS
+* ``1521543_BVEL.inp``: input file for BVEL
+
+Open the ``5121543.inp`` with your text editor and check the parameters.
+If you edit the input file, you need to rerun PyAbstantia.
+
+::
+
+    $ pyabst -mp 6 1521543.inp
+
+After running PyAbstantia, open the CIF by VESTA_ and import ``1521543.pgrid``.
+
+Set the isosurface value to 0.2, and disable the sections.
+
+.. image:: ./images/NVPF3223_BVS.jpg
+    :scale: 60%
+
+You can visualize multiple isosurface levels simultaneously. (:math:`|\Delta V|` = 0.1 and 0.5)
+
+.. image:: ./images/NVPF3223_BVS_m.jpg
+    :scale: 60%
+
+
+BVEL
+^^^^
+Open and edit ``1521543_BVEL.inp``. 
+
+(You must change the formal valence of V, and input the Morse potential parameters for the Na---F bond.)
+
+Run PyAbstantia.
+
+::
+
+    $ pyabst -mp 8 1521543_BVEL.inp
+
+Then you will get ``1521543_BVEL.pgrid`` storing the BVEL map. The isosurfaces in the below image were drawn at levels at -2.9  and 1.4 eV (0.5 and 2.0 eV above the lowest energy, respectively).
+
+.. image:: ./images/NVPF3223_BVEL.jpg
+    :scale: 60%
+
 .. _Python: https://www.python.org
 .. _pymatgen: http://pymatgen.org
 .. _3DBVSMAPPER: https://doi.org/10.1107/S0021889812032906
@@ -286,3 +396,4 @@ Following options are available only in the CIF mode.
 .. _NumPy: http://www.numpy.org
 .. _RIETAN-FP: http://fujioizumi.verse.jp/download/download_Eng.html
 .. _VESTA: http://jp-minerals.org/vesta/en/
+.. _COD: http://www.crystallography.net/cod/
